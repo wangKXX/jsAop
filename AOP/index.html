@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		
+	</body>
+	<script type="text/javascript" src="js/jsAop.js" ></script>
+	<script>
+		var parm1 = ["hello","world"],parm2 = "func2";
+		function func1(parm1,parm2){
+			
+				alert(parm1+parm2);
+			
+		}
+		
+		function func2(parm2){
+			alert(parm2);
+		}
+		var fun = func1.before(func2,parm1,parm2);
+		fun();
+	</script>
+</html>
